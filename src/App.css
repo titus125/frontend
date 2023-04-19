@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.generate-maze {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-maze {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

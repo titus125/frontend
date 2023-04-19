@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import GenerateMaze from './GenerateMaze';
+import DisplayMaze from './DisplayMaze';
 
 function App() {
+  const [maze, setMaze] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex' }}>
+      <div style={{ flex: '1' }}>
+        <GenerateMaze setMaze={setMaze} />
+      </div>
+      <div style={{ flex: '1' }}>
+        <DisplayMaze maze={maze} />
+      </div>
     </div>
   );
 }
