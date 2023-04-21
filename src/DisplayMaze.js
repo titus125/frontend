@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 function DisplayMaze(props) {
   const { maze } = props;
