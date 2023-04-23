@@ -62,6 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .generate-maze {
@@ -121,10 +122,10 @@
 }
 
 button {
-  margin-top: 20px;
+  margin: 8px;
+  margin-top: 40px;
   padding: 10px;
   font-size: 20px;
-  background-color: #4CAF50;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -132,6 +133,13 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
+.button1 {background-color: #4CAF50;} 
+.button2 {background-color: #2154fc;} 
+
+.button1:hover {
   background-color: #3e8e41;
+}
+
+.button2:hover {
+  background-color: #3719e0;
 }
